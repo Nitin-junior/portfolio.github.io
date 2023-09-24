@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
+</head>
+
+<body>
+    <!-- <nav> -->
+    <header id="header">
+        <a href="'#" class="logo">NITIN NJ</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="door/dooranimation.html">Destinantion</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li> <button  onclick="myFunction()" style="color: aqua; border-radius: 10px;">click on me</button></li>
+        </ul>
+    
+    </header>
+    <!-- </nav>  -->
+    <section>
+      
+        
+        <h2 id="text"><span>It's time for a new</span><br>Advanture</h2>
+       
+        <img src="img/bird1.png" id="bird1">
+        <img src="img/bird2.png" id="bird2">
+        <img src="img/forest.png" id="forest">
+        <a href="#" id="btn">Explore</a>
+        <img src="img/rocks.png" id="rocks">
+        <img src="img/water.png" id="water">
+    </section>
+    <div class="sec">
+        <h2>Nitin junior</h2>
+        <p>Passion for Coding: Coding isn't just a hobby for me; it's a way of life. I find joy in exploring the world of programming languages and technologies.
+
+            <br><br>Teamwork and Balance: I believe that teamwork on the field and in coding projects is key to success. Balancing academics with extracurricular interests has honed my time management skills.
+            
+            <br><br>Desire to Help Others: Aside from my interests, I have a strong desire to help others. I volunteer my time and skills to support various community projects.
+            
+            <br><br> Role Models: Elon Musk and Cristiano Ronaldo are two of my role models for their achievements in their respective fields.
+            
+            <br><br>Favorite Football Position: In football, I play as a midfielder, where I enjoy orchestrating plays and setting up goals.
+            
+            <br><br>Diversity and Inclusion: I'm a strong advocate for diversity and inclusion in both the tech and sports industries, believing that everyone should have equal opportunities to pursue their passions.
+            
+            <br><br>Intersection of Interests: My academic pursuits include computer science and sports management. I'm excited about the intersection of these two fields and how they can complement each other. 🌟
+        </p>
+    </div>
+    <script>
+
+
+        const text = document.getElementById('text');
+        const bird1 = document.getElementById('bird1');
+        const bird2 = document.getElementById('bird2');
+        const forest = document.getElementById('forest');
+        const btn = document.getElementById('btn');
+        const rocks = document.getElementById('rocks');
+        const header = document.getElementById('header');
+
+        window.addEventListener('scroll', () => {
+            const value = window.scrollY;
+
+            text.style.top = 50 + value * -0.5 + '%';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * 2 + 'px';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -0.12 + 'px';
+            forest.style.top = value * 0.25 + 'px';
+            header.style.top = value * 0.5 + 'px'
+        })
+        function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+
+    </script>
+</body>
+
+</html>
